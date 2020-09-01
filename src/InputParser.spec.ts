@@ -1,8 +1,21 @@
 import { InputParser } from "./InputParser";
 
 describe("InputParser", () => {
-    it("should parse input as exepected", () => {
-        const parser = new InputParser();
-        expect(parser.parse("a")).toEqual(["a"]);
+    describe("parse", () => {
+        const testData: { input: string; expected: string[] }[] = [
+            { input: "a", expected: ["a"] },
+            // { input: "a b", expected: ["a", "b"] },
+        ];
+
+        for (const test of testData) {
+            const expectation = `"${test.input}" => [ ${test.expected.map(
+                (x) => `"${x}"`
+            )} ]`;
+
+            it(expectation, () => {
+                const parser = new InputParser();
+                expect(parser.parse(test.input)).toEqual(test.expected);
+            });
+        }
     });
 });
