@@ -3,18 +3,12 @@
     "target": "es2015",
     "module": "commonjs",
     "strict": true,
-    
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-
     "esModuleInterop": true,
-    
-    "skipLibCheck": true, 
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-
-    "outDir": "bin"
-  },
-  "files": [ "src/main.ts" ]
+  }
 }

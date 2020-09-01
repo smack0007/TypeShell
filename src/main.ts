@@ -3,11 +3,11 @@ import { ls } from "shelljs";
 
 const readline: Interface = createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
 
 function prompt(): void {
-    readline.question('> ', input => {
+    readline.question("> ", (input) => {
         let done = false;
 
         switch (input) {

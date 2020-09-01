@@ -1,6 +1,12 @@
 {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "eslint.validate": [ "typescript", "typescriptreact" ],
     "files.exclude": {
         "**/.git": true,
         "node_modules": true,
-    }
+    },
+    "files.trimTrailingWhitespace": true,
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.tsdk": "node_modules/typescript/lib",  
 }
